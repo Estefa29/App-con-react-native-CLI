@@ -60,7 +60,7 @@ function update({route,navigation}) {
             <TextInput  inlineImageLeft="outline_supervisor_account_black_24" inlineImagePadding={15} defaultValue={reseña} style={styles.textInput} placeholder="Reseña" onChangeText={text => setReseña(text)}/>
             <TouchableOpacity onPress={update}  >
             <LinearGradient colors={[Colors.primary, Colors.secondary]} style={ButtonStyles.large}>
-                    <Text style={styles.textApartamentButton}>Agregar</Text>
+                    <Text style={styles.textApartamentButton}>Actualizar</Text>
                 </LinearGradient>
             </TouchableOpacity>
         
