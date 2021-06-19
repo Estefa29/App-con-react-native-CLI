@@ -13,7 +13,8 @@ const apartamentosScreen = ({route,navigation}) => {
     }
     const deleteapartaments = async () => {
         try {
-            const response = await fetch('https://apiapartamentos.herokuapp.com/apartamento/eliminar/60bf98f6f262550015d909c2', {
+//             const response = await fetch('https://apiapartamentos.herokuapp.com/apartamento/eliminar/60bf98f6f262550015d909c2', {
+            const response = await fetch('https://apiapartamentos.herokuapp.com/apartamento/eliminar/${_id}', {
                 method: 'DELETE',
                 headers: {
                     Accept: 'application/json',
