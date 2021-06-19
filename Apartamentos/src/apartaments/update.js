@@ -22,7 +22,8 @@ function update({route,navigation}) {
         }
         else{
         try {
-            const response = await fetch('https://apiapartamentos.herokuapp.com/apartamento/editar/60bf92a5f262550015d909bb', {
+//             const response = await fetch('https://apiapartamentos.herokuapp.com/apartamento/editar/60bf92a5f262550015d909bb', {
+                 const response = await fetch('https://apiapartamentos.herokuapp.com/apartamento/editar/${_idU}', {
                 method: 'PUT',
                 headers: {
                     Accept: 'application/json',
